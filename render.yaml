@@ -12,6 +12,9 @@
 services:
   - type: web
     name: skribbl-clone-server
+    runtime: node
+    plan: free
+    region: oregon
     rootDir: server
     buildCommand: npm install && npm run build
     startCommand: npm start
@@ -26,7 +29,6 @@ services:
   - type: web
     name: skribbl-clone-client
     runtime: static
-    plan: free
     rootDir: client
     buildCommand: npm install && npm run build
     staticPublishPath: dist
