@@ -12,8 +12,6 @@
 services:
   - type: web
     name: skribbl-clone-server
-    runtime: node
-    plan: free
     rootDir: server
     buildCommand: npm install && npm run build
     startCommand: npm start
