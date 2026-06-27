@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.npm-global/
+
+# Build output
+dist/
+build/
+
+# Env files (never commit secrets)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Test output
+/server/tests/*.log
